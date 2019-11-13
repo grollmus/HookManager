@@ -14,9 +14,7 @@ namespace HookManager.Models
             var path = PreparePath(hook.ScriptFilePath);
 
             if (IsPowershellFile(hook))
-                sb.AppendLine($"powershell.exe -ExecutionPolicy RemoteSigned -Command {path} || exit 1");
-            else
-                sb.AppendLine($"cmd.exe /c \"{path}\" || exit 1");
+                sb.AppendLine($"powershell.exe -ExecutionPolicy RemoteSigned -Command {path} \"$@\" || exit 1");
 
             return sb.ToString();
         }

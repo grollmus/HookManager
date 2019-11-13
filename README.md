@@ -18,7 +18,7 @@ The tool will search inside a folder for .json files and expects them to contain
 {
     "title": "Name of the Hook that will shown in the UI",
     "description": "A longer description text that will be shown in the UI",
-    "scriptFileName": "The name of the of the script file in the same folder (.bat and .ps1 currently supported)",
+    "scriptFileName": "The name of the of the script file in the same folder (.ps1 currently supported)",
     "type": "The hook type this scripts can be installed to (see next section)"
 }
 ```
