@@ -1,0 +1,29 @@
+﻿namespace HookManager.Models
+{
+    internal enum HookType
+    {
+        ApplyPatchMsg,
+        PreApplyPatch,
+        PostApplyPatch,
+        PreCommit,
+        PrepareCommitMsg,
+        CommitMsg,
+        PostCommit,
+        PreRebase,
+        PostCheckout,
+        PostMerge,
+        PreReceive,
+        Update,
+        PostReceive,
+        PostUpdate,
+        PreAutoGc,
+        PostRewrite,
+        PrePush,
+        PreMergeCommit,
+        PushToCheckout,
+        SendmailValidate,
+        FsMonitorWatchman,
+        P4PreSubmit,
+        PostIndexChange
+    }
+}
